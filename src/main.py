@@ -2,9 +2,13 @@ import math
 
 a= math.sin(math.pi/2)
 #print(a)
+
 b=1;
 type(b)
 #if(a): print('True')
-c=0;
+c=False;
 type(c)
-if(c): print('False')
+print(c)
+
+a= "Hello there"
+print(a[1:5])
