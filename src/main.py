@@ -12,3 +12,11 @@ print(c)
 
 a= "Hello there"
 print(a[1:5])
+
+name = "Peter"
+my_string = "Hello %s " % name
+print(my_string)
+
+a=4.0
+b = 5 + a 
+print(int(b))
