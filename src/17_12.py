@@ -35,3 +35,29 @@ a1=list(range(20))
 b1=list(range(12))
 a1.extend(b1)
 print(a1)
+########
+stack=[1,2,3,4]
+print("stack iniziale:",stack)
+for i in list(range(5,7)):
+  stack.append(i)
+print("append:",stack)
+stack.pop()
+print("pop:",stack)
+######
+queue=["a","b","c","d"]
+print("initial queue:", queue)
+queue.append("e")
+queue.append("f")
+print("append:",queue)
+queue.pop(0)
+print("pop:",queue)
+#######
+tup1=()
+tup2=(35,)
+print(tup1,tup2)
+print(type(tup1),type(tup2))
+tup = ('physics', 'chemistry', 1997, 2000)
+print(tup)
+tup3=(1,2,3,4,5,6)
+print(type(tup3))
+print(len(tup3),max(tup3))
