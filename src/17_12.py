@@ -58,6 +58,23 @@ print(tup1,tup2)
 print(type(tup1),type(tup2))
 tup = ('physics', 'chemistry', 1997, 2000)
 print(tup)
-tup3=(1,2,3,4,5,6)
+tup3=(1,2,3,4,5,6,123)
 print(type(tup3))
 print(len(tup3),max(tup3))
+########
+a={}
+d={1:"Hello",2:"world"}
+print(type(d))
+print(d[2])
+e={'name':"john",1:[2,4,3]}
+print(e["name"])
+d={"age":28, "name":"Jack"}
+print(d["age"])
+d["age"]=30
+print(d["age"])
+f={'name':"john",1:[2,4,3]}
+print(f.pop(1))
+print(f)
+f.clear()
+print(f)
+#########
