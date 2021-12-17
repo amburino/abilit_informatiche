@@ -78,3 +78,38 @@ print(f)
 f.clear()
 print(f)
 #########
+n=56
+guess=int(input("inserisci un intero:"))
+if guess ==n:
+  print("letsgooo")
+
+elif guess<n:
+  print("nope alza il valore")
+else:
+  print("nope, troppo basso")
+######
+for i in list(range(1,11)):
+  print(i)
+  if i==10:
+     break
+else:
+  print("the loop is over")
+#######
+bol1=True
+while (bol1==True):
+  print("Sono true")
+  s=int(input("continua 0, fermo 1:"))
+  if(s==1):
+    print("Sono false")
+    break
+print("----------")
+############
+a="ciao bello"
+for i in a:
+  print(i)
+
+a={1:"a",2:[1,2,3]}
+for k,v in a.items():
+  print(k,v)
+for i in a.values():
+  print(i)  
