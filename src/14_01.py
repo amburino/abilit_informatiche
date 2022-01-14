@@ -1,14 +1,28 @@
-import sys
+import math
 
-while(True):
-  print("inserire un numero intero da 1 a 10")
-  par1=input()
-  if int(par1) in range(11):
-    while(True):
-      print("Inserisci una lettera ora fra queste: a,b,c")
-      par2=input()
-      if par2 in ['a','b','c']:
-        print("i due parametri forniti sono: ",par1,par2)
-      sys.exit()
-  else: print("riprova")
-else: print("riprova")  
+infile="mydata.dat"
+outfile="myout.dat"
+
+def f(y):
+  if y >= 0.0:
+    return y**5*math.exp(-y)
+  else:
+    return 0.0
+
+indata=open(infile, "r")
+linee=indata.readlines()
+indata.close()
+letti=[]
+x=[]
+for n in linee:
+  valori= n.split()
+  x.append(float(valori[0]));
+  y= float(valori[1])
+  letti.append(f(y))
+
+outdata= open(outfile, "w")
+i=0
+for n in letti:
+  outdata.write('%g %12.5e\n' %(x[i],n))
+  i+=1
+outdata.close()
