@@ -1,5 +1,13 @@
 {
   "files": {
+    "input1.txt": [
+      {
+        "id": "b398c243-6c7a-45b2-8fd0-5cf6af50053e",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ],
     "src/17_12.py": [
       {
         "id": "0baefe7b-4dbe-4d99-80c6-0b9671744caa",
